@@ -4,13 +4,13 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 import { InMemoryCache } from "apollo-boost";
 import Home from "./components/Home/Home";
-const client = new ApolloClient({
+const CLIENT = new ApolloClient({
   uri: "https://countries.trevorblades.com",
   cache: new InMemoryCache(),
 });
 
 const App = () => (
-  <ApolloProvider client={client}>
+  <ApolloProvider client={CLIENT}>
     <Home />
   </ApolloProvider>
 );
