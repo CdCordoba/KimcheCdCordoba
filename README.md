@@ -4,7 +4,7 @@ Nombre postulante: Christian David Cordoba Carlosama
 Link a la app en producción: [LINK DEL DEPLOY]
 
 ## Instrucciones
-
+ 
 Debes crear un buscador de países consultando el [siguiente grafo](https://countries.trevorblades.com/). Este código contiene una base para seguir con la aplicación en React y ApolloClient. Queda a disposición tuya cualquier cambio, ya sea de estructura, estilo, etc.
 
 Se espera que logres hacer una aplicación parecida a la del siguiente diagrama:
