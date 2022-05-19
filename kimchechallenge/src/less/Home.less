@@ -1,0 +1,71 @@
+@import "./variables.less";
+.header{
+    margin: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.inputs {
+    form{
+        max-width: max-content;
+        margin: 1rem auto;
+        .searcher{
+            display: flex;
+            justify-content: flex-start;
+            background-color: rgb(207, 207, 207);
+            border-radius: 10px;
+            padding: 10px 3rem 10px 1rem;
+
+            img{
+                padding: 0 5px;
+                margin-right: 5px;
+                width: 1.5rem;
+                border-right: 1px solid rgb(126, 126, 126);
+            }
+            .searchBar{
+                font-family: @roboto;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                background-color: rgb(207, 207, 207);
+            }
+        }
+        
+    }
+    .filters{
+        margin: 0 auto 3rem 1rem;
+        h3{
+            font-family: @roboto;
+            font-size: 30px;
+            margin: 20px 0 10px 1.5rem;
+        }
+        button{
+            font-family: @roboto;
+            font-size: 20px;
+            padding: 10px 1rem;
+            margin: 1rem;
+            outline: none;
+            border: 0.2px solid black;
+            border-radius: 10px;
+            &:hover{
+                cursor: pointer;
+                background-color: rgb(170, 213, 250);
+            }
+        }
+        .pressed{
+            color: aliceblue;
+            background-color: rgb(32, 66, 95);
+            &:hover{
+                cursor: auto;
+            background-color: rgb(32, 66, 95);
+            
+            }
+        }
+    }
+}
+
+.loading{
+    display: block;
+    margin: auto;
+}
