@@ -1,0 +1,63 @@
+.header {
+  margin: 10px;
+}
+.header:hover {
+  cursor: pointer;
+}
+.inputs form {
+  max-width: max-content;
+  margin: 1rem auto;
+}
+.inputs form .searcher {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #cfcfcf;
+  border-radius: 10px;
+  padding: 10px 3rem 10px 1rem;
+}
+.inputs form .searcher img {
+  padding: 0 5px;
+  margin-right: 5px;
+  width: 1.5rem;
+  border-right: 1px solid #7e7e7e;
+}
+.inputs form .searcher .searchBar {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #cfcfcf;
+}
+.inputs .filters {
+  margin: 0 auto 3rem 1rem;
+}
+.inputs .filters h3 {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 30px;
+  margin: 20px 0 10px 1.5rem;
+}
+.inputs .filters button {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 20px;
+  padding: 10px 1rem;
+  margin: 1rem;
+  outline: none;
+  border: 0.2px solid black;
+  border-radius: 10px;
+}
+.inputs .filters button:hover {
+  cursor: pointer;
+  background-color: #aad5fa;
+}
+.inputs .filters .pressed {
+  color: aliceblue;
+  background-color: #20425f;
+}
+.inputs .filters .pressed:hover {
+  cursor: auto;
+  background-color: #20425f;
+}
+.loading {
+  display: block;
+  margin: auto;
+}
