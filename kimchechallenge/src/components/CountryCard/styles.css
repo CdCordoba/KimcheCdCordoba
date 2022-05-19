@@ -1,0 +1,36 @@
+.card {
+  font-family: 'Nanum Myeongjo', serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 25rem;
+  margin: 0.5rem;
+  border: 1px solid gray;
+  box-shadow: 1rem 1rem 60px -10px black;
+  border-radius: 9px;
+  border-top-width: 2px;
+  transition: transform 0.5s;
+}
+.card .name,
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card .info {
+  font-family: 'Roboto Flex', sans-serif;
+}
+.icon {
+  border-radius: 50%;
+  background-color: #9ac9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  max-width: 5rem;
+  margin: auto;
+  margin-top: -50px;
+}
