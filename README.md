@@ -46,3 +46,10 @@ Para este problema se pueden implementar indices para reconocer ciertos aspectos
 ALTER TABLE alumnos ADD INDEX (apellido)
 
 Más información sobre índices en mySql: https://desarrolloweb.com/articulos/intro-indices-mysql.html
+
+Comentarios:
+
+Para el desarrollo de la app tomé las siguientes decisiones:
+- No usar Redux ya que no me fue necesario un estado global.
+- Buscar versionados que sean compatibles con las funcionalidades que dessarrollé.
+- Usar less para modularizar y optimizar código en los estilos.

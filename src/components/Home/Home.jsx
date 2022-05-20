@@ -23,7 +23,7 @@ const GET_COUNTRIES = gql`{
         }
 }`
 export default function Home() {
-    const { data, error, loading } = useQuery(GET_COUNTRIES);
+    const { data, loading } = useQuery(GET_COUNTRIES);
     const imgLoading = 'https://cbswire.dk/wp-content/uploads/2022/01/giphy-earth-kopi.gif';
 
     const [sort, setSort] = useState("continent")
@@ -42,7 +42,17 @@ export default function Home() {
             continent.classList.remove('pressed');
         }
     }
+    function device() {
+        const ua = navigator.userAgent;
 
+        if (/Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(ua)) {
+            return ("mobile");
+        }
+        if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+            return "tablet";
+        }
+        return ('desktop')
+    }
     function handleSearch(e) {
         const { value } = e.target
         e.preventDefault();
@@ -59,7 +69,7 @@ export default function Home() {
             <div className="inputs">
                 <form>
                     <div className='searcher'>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/768px-Magnifying_glass_icon.svg.png" alt="" />
+                        <img className={device() === 'mobile' || device() === 'tablet' ? 'noneDisplay' : ''} src="https://cdn-icons-png.flaticon.com/512/251/251116.png" alt="" />
                         <input className='searchBar' type="search" placeholder='Type a Country...' onChange={handleSearch} />
                     </div>
                 </form>
