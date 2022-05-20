@@ -41,3 +41,8 @@ Acá van algunas cosas que pueden ser útiles (o no 👀):
 Pregunta:
 
 "La tabla que contiene la información correspondiente a la asistencia diaria de un niño en un colegio tiene 90 millones de filas. Todas las tablas del sistema existen en la misma BDD en MySQL. La lógica del backend que actualiza la información correspondiente al pasar la asistencia tiene un tiempo de servicio p95 de 10 segundos. El equipo está interesado en bajar este tiempo para mejorar la experiencia del usuario (y porque nos gusta pensar en Kimche como un Ferrari). ¿Qué propondrías para enfrentar el problema? Esta pregunta es abierta, no hay respuestas malas. Puedes proponer arquitectura, tecnologías, diseño, etc."
+
+Para este problema se pueden implementar indices para reconocer ciertos aspectos con una respuesta más rápida por parte de la base de datos. Por ejemplo, podríamos generar un índice por apellido y optimizar la búsqueda de información.
+ALTER TABLE alumnos ADD INDEX (apellido)
+
+Más información sobre índices en mySql: https://desarrolloweb.com/articulos/intro-indices-mysql.html
